@@ -1,0 +1,17 @@
+{
+  "Login_btn":"[data-uuid='MJFtCCgVhXrVl7v9HA7EH_login']",
+  "Username_loc":".hide-when-two-factor>#user",
+  "Continue_btn": "#login",
+  "Password_loc":"#password",
+  "Login_submit_btn":"#login-submit",
+  "Create_btn":"[data-testid='header-create-menu-button']",
+  "Create_board_btn":"[data-testid='header-create-board-button']",
+  "Board_title_loc":"[data-testid='create-board-title-input']",
+  "Create_submit_btn":"[data-testid='create-board-title-input']",
+  "List_input":".list-name-input",
+  "add_card":".js-add-a-card",
+  "message":".list-card-details.u-clearfix",
+  "Profile_btn":"[data-testid='header-member-menu-button']",
+  "Logout_btn":"[data-testid='account-menu-logout']"
+
+}
