@@ -2,6 +2,10 @@ require("@4tw/cypress-drag-drop");
 Cypress.on('uncaught:exception', (err, runnable) => {
   return false;
 })
+Cypress.Commands.add('open_trello_website', () => {
+    cy.visit('https://trello.com/');
+    cy.url().should('include', 'https://trello.com/')  
+})
 Cypress.Commands.add('loginPage', (Locator,data) => {
     cy.get(Locator.Login_btn).click();
     cy.get(Locator.Username_loc).type(data.Email);
@@ -27,8 +31,5 @@ Cypress.Commands.add('logout', (Locator) => {
     cy.get(Locator.Logout_btn).click()
     cy.get("#logout-submit").click()
 })
-Cypress.Commands.add('open_trello_website', () => {
-    cy.visit('https://trello.com/');
-    cy.url().should('include', 'https://trello.com/')  
-})
+
 
